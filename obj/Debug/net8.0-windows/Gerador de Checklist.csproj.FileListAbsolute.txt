@@ -1,0 +1,35 @@
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador de Checklist.csproj.GenerateResource.cache
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador de Checklist.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador de Checklist.AssemblyInfoInputs.cache
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador de Checklist.AssemblyInfo.cs
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador de Checklist.csproj.CoreCompileInputs.cache
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\Gerador de Checklist.exe
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\Gerador de Checklist.deps.json
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\Gerador de Checklist.runtimeconfig.json
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\Gerador de Checklist.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\Gerador de Checklist.pdb
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador de Checklist.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\refint\Gerador de Checklist.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador de Checklist.pdb
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador de Checklist.genruntimeconfig.cache
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\ref\Gerador de Checklist.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador_de_Checklist.frmPrincipal.resources
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\MySqlConnector.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador de Checklist.csproj.AssemblyReference.cache
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador_de_Checklist.Properties.Resources.resources
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador .94B7C6FC.Up2Date
+C:\Users\franzen\source\repos\Gerador de Checklist\obj\Debug\net8.0-windows\Gerador_de_Checklist.frmConfig.resources
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\Gerador de Checklist.dll.config
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\Enums.NET.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\ExtendedNumerics.BigDecimal.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\MathNet.Numerics.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\NPOI.Core.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\NPOI.OOXML.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\NPOI.OpenXml4Net.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\NPOI.OpenXmlFormats.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\ICSharpCode.SharpZipLib.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\SixLabors.Fonts.dll
+C:\Users\franzen\source\repos\Gerador de Checklist\bin\Debug\net8.0-windows\SixLabors.ImageSharp.dll
