@@ -121,7 +121,7 @@
   <data name="btnProcuraArquivo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHYSURBVDhPzZRL
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHYSURBVDhPzZRL
         SxtRGIZnK6jFOROJGzdVUNGaTBpQd7rPwq0/wrUgXv6CG2lRzCQxiq1G6MKFF+IlUbxAEBTcuNHUSYxG
         aaFoYubtNzPHeEvsxI194WE233nO951zGOH/T9Jrs/+algZTATac9JlcBtlwOij2p8ZZBS+znp+K2I2l
         amRDtjx38zZgsRpnChvhZdaj+pknMych4WNPuJg0yCa8YtvJWKX4nOuZSvH4a9UHrnlIMaFKXJKUvpmE
@@ -136,7 +136,7 @@
   <data name="btnProcurarDiretorio.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHYSURBVDhPzZRL
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHYSURBVDhPzZRL
         SxtRGIZnK6jFOROJGzdVUNGaTBpQd7rPwq0/wrUgXv6CG2lRzCQxiq1G6MKFF+IlUbxAEBTcuNHUSYxG
         aaFoYubtNzPHeEvsxI194WE233nO951zGOH/T9Jrs/+algZTATac9JlcBtlwOij2p8ZZBS+znp+K2I2l
         amRDtjx38zZgsRpnChvhZdaj+pknMych4WNPuJg0yCa8YtvJWKX4nOuZSvH4a9UHrnlIMaFKXJKUvpmE
@@ -153,6 +153,9 @@
   </metadata>
   <metadata name="ofdArquivoBase.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>164, 17</value>
+  </metadata>
+  <metadata name="ttDica.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>302, 17</value>
   </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

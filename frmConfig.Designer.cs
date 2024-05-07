@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConfig));
             btnSair = new Button();
             tabConfig = new TabControl();
@@ -54,6 +55,7 @@
             btnGravar = new Button();
             fbdSaidaArquivos = new FolderBrowserDialog();
             ofdArquivoBase = new OpenFileDialog();
+            ttDica = new ToolTip(components);
             tabConfig.SuspendLayout();
             pageConexao.SuspendLayout();
             pageChecklist.SuspendLayout();
@@ -256,6 +258,7 @@
             lblMensagemPadrao.Size = new Size(135, 20);
             lblMensagemPadrao.TabIndex = 6;
             lblMensagemPadrao.Text = "Mensagem Padrão:";
+            lblMensagemPadrao.MouseHover += lblMensagemPadrao_MouseHover;
             // 
             // btnProcurarDiretorio
             // 
@@ -310,6 +313,14 @@
             ofdArquivoBase.Filter = "Arquivos DOCX|*.docx|Todos os arquivos|*.*";
             ofdArquivoBase.InitialDirectory = "C:";
             // 
+            // ttDica
+            // 
+            ttDica.AutoPopDelay = 5000;
+            ttDica.InitialDelay = 500;
+            ttDica.ReshowDelay = 100;
+            ttDica.ShowAlways = true;
+            ttDica.ToolTipIcon = ToolTipIcon.Info;
+            // 
             // frmConfig
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -363,5 +374,6 @@
         private TextBox txtCaminhoArquivoBase;
         private Label lblArquivoBase;
         private OpenFileDialog ofdArquivoBase;
+        private ToolTip ttDica;
     }
 }

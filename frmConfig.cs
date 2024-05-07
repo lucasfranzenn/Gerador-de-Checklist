@@ -81,10 +81,15 @@ namespace Gerador_de_Checklist
         {
             ofdArquivoBase.InitialDirectory = txtCaminhoArquivoBase.Text;
 
-            if(ofdArquivoBase.ShowDialog() == DialogResult.OK)
+            if (ofdArquivoBase.ShowDialog() == DialogResult.OK)
             {
                 txtCaminhoArquivoBase.Text = ofdArquivoBase.FileName;
             }
+        }
+
+        private void lblMensagemPadrao_MouseHover(object sender, EventArgs e)
+        {
+            ttDica.Show("Mensagem padrão que será utilizada quando a descrição do requisito estiver em branco.", lblMensagemPadrao);
         }
     }
 }
