@@ -38,6 +38,9 @@ namespace Gerador_de_Checklist
 
                 FileStream saida = new(Settings.Default.OutputDir + @$"\{campos.Tarefa}.docx", FileMode.Create, FileAccess.Write);
                 documento.Write(saida);
+
+                saida.Close();
+                documento.Close();
             }
 
         }

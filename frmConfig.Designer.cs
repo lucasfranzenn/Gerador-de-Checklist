@@ -291,9 +291,10 @@
             // 
             btnGravar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnGravar.Cursor = Cursors.Hand;
-            btnGravar.Location = new Point(479, 192);
+            btnGravar.FlatStyle = FlatStyle.Popup;
+            btnGravar.Location = new Point(451, 196);
             btnGravar.Name = "btnGravar";
-            btnGravar.Size = new Size(75, 23);
+            btnGravar.Size = new Size(99, 44);
             btnGravar.TabIndex = 2;
             btnGravar.Text = "&Gravar";
             btnGravar.UseVisualStyleBackColor = true;
@@ -314,17 +315,16 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnSair;
-            ClientSize = new Size(557, 219);
+            ClientSize = new Size(557, 244);
             Controls.Add(btnGravar);
             Controls.Add(tabConfig);
             Controls.Add(btnSair);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MaximumSize = new Size(573, 258);
             MinimizeBox = false;
             MinimumSize = new Size(573, 258);
             Name = "frmConfig";
-            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Configurações";
             Shown += frmConfig_Shown;
