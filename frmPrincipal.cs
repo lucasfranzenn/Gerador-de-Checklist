@@ -107,10 +107,7 @@ namespace Gerador_de_Checklist
 
         private void btnConfig_Click(object sender, EventArgs e)
         {
-            // new Task(() => Application.Run(new frmConfig())).Start();
-
-            frmConfig config = new frmConfig();
-            config.Show();
+            new frmConfig().ShowDialog();
         }
 
         private void txtTarefa_Leave(object sender, EventArgs e)
