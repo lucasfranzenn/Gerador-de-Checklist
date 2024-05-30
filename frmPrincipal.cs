@@ -26,7 +26,7 @@ namespace Gerador_de_Checklist
             DocumentoDocx.GerarArquivo(campos);
             new Task(() => AtualizarBanco(campos)).Start();
 
-            if(MensagemAbrirPasta($"Checklist gerado: {campos.Tarefa}", TipoMensagem.Sucesso))
+            if (MensagemAbrirPasta($"Checklist gerado: {campos.Tarefa}", TipoMensagem.Sucesso))
                 System.Diagnostics.Process.Start("explorer.exe", Settings.Default.OutputDir);
 
             LimparTabela();
@@ -161,9 +161,19 @@ namespace Gerador_de_Checklist
                 AutoComplete();
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Mensagem(ex.Message, TipoMensagem.Erro);
+            }
+        }
+
+        private void frmPrincipal_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.F5)
+            {
+                new frmConfig().ShowDialog();
+
+                e.Handled = true;
             }
         }
     }

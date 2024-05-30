@@ -157,12 +157,14 @@
             Controls.Add(lblTarefa);
             Controls.Add(lblAutor);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            KeyPreview = true;
             MaximizeBox = false;
             MinimumSize = new Size(930, 250);
             Name = "frmPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Gerador de Checklist";
             Shown += frmPrincipal_Shown;
+            KeyDown += frmPrincipal_KeyDown;
             pnlRequisitos.ResumeLayout(false);
             pnlRequisitos.PerformLayout();
             ResumeLayout(false);
