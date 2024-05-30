@@ -7,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 using MySqlConnector;
 using System.Security.Cryptography;
+using Gerador_de_Checklist.Enum;
 
 namespace Gerador_de_Checklist
 {
@@ -45,17 +46,18 @@ namespace Gerador_de_Checklist
 
         public static bool VerificaAutorTarefa(string txtAutor, string txtTarefa) => txtAutor == "" || txtTarefa == "";
 
-        public static void Mensagem(string mensagem, byte opcao)
+        public static void Mensagem(string mensagem, TipoMensagem opcao)
         {
+
             switch (opcao)
             {
-                case 1:
+                case TipoMensagem.Aviso:
                     MessageBox.Show(mensagem, "..:: AVISO ::..", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
-                case 2:
+                case TipoMensagem.Sucesso:
                     MessageBox.Show(mensagem, "..:: Sucesso ::..", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     break;
-                case 3:
+                case TipoMensagem.Erro:
                     MessageBox.Show(mensagem, "..:: ERRO ::..", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 default:

@@ -1,3 +1,4 @@
+using Gerador_de_Checklist.Enum;
 using Gerador_de_Checklist.Properties;
 using MySqlConnector;
 using System.Runtime.CompilerServices;
@@ -17,7 +18,7 @@ namespace Gerador_de_Checklist
         {
             if (VerificaAutorTarefa(txtAutor.Text, txtTarefa.Text))
             {
-                Mensagem("Preencha os campos autor e tarefa!", 1);
+                Mensagem("Preencha os campos autor e tarefa!", TipoMensagem.Aviso);
                 return;
             }
 
@@ -25,7 +26,7 @@ namespace Gerador_de_Checklist
             DocumentoDocx.GerarArquivo(campos);
             new Task(() => AtualizarBanco(campos)).Start();
 
-            Mensagem($"Checklist gerado: {campos.Tarefa}", 2);
+            Mensagem($"Checklist gerado: {campos.Tarefa}", TipoMensagem.Sucesso);
 
             LimparTabela();
         }
@@ -161,7 +162,7 @@ namespace Gerador_de_Checklist
             }
             catch(Exception ex)
             {
-                Mensagem(ex.Message, 3);
+                Mensagem(ex.Message, TipoMensagem.Erro);
             }
         }
     }
