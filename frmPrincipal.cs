@@ -26,7 +26,8 @@ namespace Gerador_de_Checklist
             DocumentoDocx.GerarArquivo(campos);
             new Task(() => AtualizarBanco(campos)).Start();
 
-            Mensagem($"Checklist gerado: {campos.Tarefa}", TipoMensagem.Sucesso);
+            if(MensagemAbrirPasta($"Checklist gerado: {campos.Tarefa}", TipoMensagem.Sucesso))
+                System.Diagnostics.Process.Start("explorer.exe", Settings.Default.OutputDir);
 
             LimparTabela();
         }

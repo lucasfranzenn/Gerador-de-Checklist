@@ -52,17 +52,39 @@ namespace Gerador_de_Checklist
             switch (opcao)
             {
                 case TipoMensagem.Aviso:
-                    MessageBox.Show(mensagem, "..:: AVISO ::..", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show(mensagem, $"..:: {opcao} ::..", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     break;
                 case TipoMensagem.Sucesso:
-                    MessageBox.Show(mensagem, "..:: Sucesso ::..", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show(mensagem, $"..:: {opcao} ::..", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                     break;
                 case TipoMensagem.Erro:
-                    MessageBox.Show(mensagem, "..:: ERRO ::..", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(mensagem, $"..:: {opcao} ::..", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 default:
                     return;
             }
+        }
+
+        public static bool MensagemAbrirPasta(string mensagem, TipoMensagem opcao)
+        {
+            switch (opcao)
+            {
+                case TipoMensagem.Aviso:
+                    if(MessageBox.Show(mensagem, $"..:: {opcao} ::..", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        return true;
+                    break;
+                case TipoMensagem.Sucesso:
+                    if(MessageBox.Show(mensagem, $"..:: {opcao} ::..", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
+                        return true;
+                    break;
+                case TipoMensagem.Erro:
+                    if(MessageBox.Show(mensagem, $"..:: {opcao} ::..", MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+                        return true;
+                    break;
+                default:
+                    break;
+            }
+            return false;
         }
 
         public static void AtualizarBanco(CamposChecklist campos)
