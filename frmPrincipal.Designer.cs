@@ -38,6 +38,7 @@
             tlpRequisitos = new TableLayoutPanel();
             pnlRequisitos = new Panel();
             btnConfig = new Button();
+            btnMarcarTodos = new Button();
             pnlRequisitos.SuspendLayout();
             SuspendLayout();
             // 
@@ -88,7 +89,7 @@
             btnGerar.Location = new Point(751, 16);
             btnGerar.Name = "btnGerar";
             btnGerar.Size = new Size(153, 52);
-            btnGerar.TabIndex = 3;
+            btnGerar.TabIndex = 4;
             btnGerar.Text = "&Gerar Checklist";
             btnGerar.UseVisualStyleBackColor = true;
             btnGerar.Click += btnGerar_Click;
@@ -129,19 +130,33 @@
             pnlRequisitos.Location = new Point(12, 85);
             pnlRequisitos.Name = "pnlRequisitos";
             pnlRequisitos.Size = new Size(893, 496);
-            pnlRequisitos.TabIndex = 4;
+            pnlRequisitos.TabIndex = 5;
             // 
             // btnConfig
             // 
             btnConfig.Cursor = Cursors.Hand;
             btnConfig.FlatStyle = FlatStyle.Flat;
             btnConfig.Image = Properties.Resources.settings__1_;
-            btnConfig.Location = new Point(695, 16);
+            btnConfig.Location = new Point(619, 16);
             btnConfig.Name = "btnConfig";
             btnConfig.Size = new Size(52, 52);
             btnConfig.TabIndex = 2;
             btnConfig.UseVisualStyleBackColor = true;
             btnConfig.Click += btnConfig_Click;
+            // 
+            // btnMarcarTodos
+            // 
+            btnMarcarTodos.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnMarcarTodos.Cursor = Cursors.Hand;
+            btnMarcarTodos.FlatStyle = FlatStyle.Flat;
+            btnMarcarTodos.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnMarcarTodos.Location = new Point(679, 16);
+            btnMarcarTodos.Name = "btnMarcarTodos";
+            btnMarcarTodos.Size = new Size(66, 52);
+            btnMarcarTodos.TabIndex = 3;
+            btnMarcarTodos.Text = "&Marcar todas as caixas";
+            btnMarcarTodos.UseVisualStyleBackColor = true;
+            btnMarcarTodos.Click += btnMarcarTodos_Click;
             // 
             // frmPrincipal
             // 
@@ -149,6 +164,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnSair;
             ClientSize = new Size(914, 589);
+            Controls.Add(btnMarcarTodos);
             Controls.Add(btnConfig);
             Controls.Add(pnlRequisitos);
             Controls.Add(btnGerar);
@@ -182,5 +198,6 @@
         private TableLayoutPanel tlpRequisitos;
         private Panel pnlRequisitos;
         private Button btnConfig;
+        private Button btnMarcarTodos;
     }
 }

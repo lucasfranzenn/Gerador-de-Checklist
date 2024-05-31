@@ -26,8 +26,8 @@ namespace Gerador_de_Checklist
             DocumentoDocx.GerarArquivo(campos);
             new Task(() => AtualizarBanco(campos)).Start();
 
-            if (MensagemAbrirPasta($"Checklist gerado: {campos.Tarefa}", TipoMensagem.Sucesso))
-                System.Diagnostics.Process.Start("explorer.exe", Settings.Default.OutputDir);
+            if (MensagemAbrirPasta($"Checklist gerado: {campos.Tarefa}\nDeseja abrir a pasta do arquivo?", TipoMensagem.Sucesso))
+                System.Diagnostics.Process.Start("explorer.exe", $"/select, {Settings.Default.OutputDir}\\{campos.Tarefa}.docx");
 
             LimparTabela();
         }
@@ -44,6 +44,8 @@ namespace Gerador_de_Checklist
                 item.Checked = false;
                 txt.Text = "";
             }
+
+            btnMarcarTodos.BackColor = DefaultBackColor;
         }
 
         private void PegaCampos(out CamposChecklist camposChecklist)
@@ -88,12 +90,27 @@ namespace Gerador_de_Checklist
                 Label lblFuncionalidade = CriaLabelFuncionalidade(i);
                 Label lblDesc = CriaLabelDescricao(i);
                 CheckBox cboxPassou = CriaCheckboxPassou(i);
+                cboxPassou.KeyDown += Cbox_Enter_KeyDown;
                 RichTextBox txtOBS = CriaTextboxOBS(i);
 
                 CriaComponentesLinha(i, lblFuncionalidade, lblDesc, cboxPassou, txtOBS);
             }
 
             BeginInvoke(new Action(() => tlpRequisitos.ResumeLayout()));
+        }
+
+        private void Cbox_Enter_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckBox? cbox = sender as CheckBox;
+                if (cbox is not null)
+                {
+                    cbox.Checked = !cbox.Checked;
+                    SelectNextControl(ActiveControl, true, true, true, true);
+                    SelectNextControl(ActiveControl, true, true, true, true);
+                }
+            }
         }
 
         private void CriaComponentesLinha(int i, Label lblFuncionalidade, Label lblDesc, CheckBox cboxPassou, RichTextBox txtOBS)
@@ -175,6 +192,19 @@ namespace Gerador_de_Checklist
 
                 e.Handled = true;
             }
+        }
+
+        private void btnMarcarTodos_Click(object sender, EventArgs e)
+        {
+            Color cor = Color.DodgerBlue;
+            bool marcar = (btnMarcarTodos.BackColor != cor);
+
+            foreach (var cb in tlpRequisitos.Controls.OfType<CheckBox>())
+            {
+                cb.Checked = marcar;
+            }
+            
+            btnMarcarTodos.BackColor = marcar ? cor : DefaultBackColor;
         }
     }
 }
